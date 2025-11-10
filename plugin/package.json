@@ -1,12 +1,24 @@
 {
   "name": "lexical-beautiful-mentions",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "license": "MIT",
   "description": "A mentions plugin for the lexical text editor.",
   "main": "src/index.ts",
   "publishConfig": {
     "access": "public"
   },
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/sodenn/lexical-beautiful-mentions.git",
